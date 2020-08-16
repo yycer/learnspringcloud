@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: eureka-server
+  security:
+    user:
+      name: yyc
+      password: 123
 eureka:
   instance:
     hostname: localhost

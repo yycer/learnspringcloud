@@ -1,0 +1,16 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: user-service
+  security:
+    user:
+      name: yyc
+      password: 123
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8004/eureka/
+      defaultZone: http://yyc:123@localhost:8001/eureka/
